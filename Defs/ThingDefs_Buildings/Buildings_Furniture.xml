@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingDef ParentName="BasicBedBase" Name="LoftBed">
     <defName>LoftBed</defName>
     <label>loft bed</label>
     <description>A loft bed consists of one mattress up top, leaving space below to have a desk or extra storage space.</description>
-    <thingClass>zed_0xff.LoftBed.Building_LoftBed</thingClass>
+    <!--thingClass>zed_0xff.LoftBed.Building_LoftBed</thingClass-->
     <graphicData>
       <texPath>Things/Furniture/LoftBed/LoftBed</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -33,7 +33,6 @@
       <paintable>true</paintable>
       <isEdifice>false</isEdifice>
     </building>
-    <!--altitudeLayer>BuildingOnTop</altitudeLayer-->
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <clearBuildingArea>false</clearBuildingArea>
     <blockLight>true</blockLight>
@@ -43,6 +42,10 @@
       <li>zed_0xff.LoftBed.PlaceWorker_Loft</li>
     </placeWorkers>
     <fillPercent>0.20</fillPercent>
+    <comps>
+      <li Class="zed_0xff.LoftBed.CompProperties_LoftBed">
+      </li>
+    </comps>
   </ThingDef>
 
 </Defs>

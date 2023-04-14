@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace zed_0xff.LoftBed {
 
-    // fix vanilla shelves stopping accepting items when placed under a LoftBed
+    // fix vanilla shelves stop accepting items when placed under a LoftBed
     [HarmonyPatch(typeof(StoreUtility), "NoStorageBlockersIn")]
     static class Patch_NoStorageBlockersIn
     {
@@ -19,8 +19,8 @@ namespace zed_0xff.LoftBed {
         private static List<Thing> FilteredThingsListAt(ThingGrid grid, IntVec3 c){
             List<Thing> list = grid.ThingsListAt(c);
             for(int i=0; i<list.Count; i++){
-                if( list[i] is Building_LoftBed){
-                    return list.Where((Thing t) => !(t is Building_LoftBed)).ToList();
+                if( CompLoftBed.isLoftBed(list[i]) ){
+                    return list.Where((Thing t) => !CompLoftBed.isLoftBed(t)).ToList();
                 }
             }
             return list;

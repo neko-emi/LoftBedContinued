@@ -16,7 +16,7 @@ namespace zed_0xff.LoftBed {
                 if ( bed != null && bed.def == VThingDefOf.LoftBed ) {
                     __result.y += LoftBedMod.Settings.f1;
                 }
-            } else if ( thing is Building_LoftBed ){
+            } else if ( CompLoftBed.isLoftBed(thing) ){
                 __result.y += LoftBedMod.Settings.f1;
             }
         }
