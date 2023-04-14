@@ -39,7 +39,7 @@ namespace zed_0xff.LoftBed
             l.Label("Loft bed label shift: " + Math.Round(Settings.f1,1));
             Settings.f1 = l.Slider(Settings.f1, -100f, 100f);
 
-            l.Label("Pawn perspective shift when laying on a loft bed: " + Math.Round(Settings.f2,1));
+            l.Label("Pawn perspective shift when laying on a loft bed: " + Math.Round(Settings.f2,2));
             Settings.f2 = l.Slider(Settings.f2, -10f, 10f);
 
             l.CheckboxLabeled("Alternate perspective mode (may fix weird pawn offset while in bed)", ref Settings.altPerspectiveMode);

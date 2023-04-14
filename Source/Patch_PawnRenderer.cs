@@ -10,8 +10,6 @@ namespace zed_0xff.LoftBed {
     [HarmonyPriority(Priority.Last)] // make it last to fix any offsets by other mods, fixes Yayo's animations
     static class Patch_GetBodyPos
     {
-        private static FieldInfo fPawn = AccessTools.Field(typeof(PawnRenderer), "pawn");
-
         private static readonly AccessTools.FieldRef<PawnRenderer, Pawn> _pawn = AccessTools.FieldRefAccess<PawnRenderer, Pawn>("pawn");
 
         // shift pawn's head position according to LoftBed's shift
@@ -21,9 +19,8 @@ namespace zed_0xff.LoftBed {
             if( pawn == null ) return;
 
             Building_Bed bed = pawn.CurrentBed();
-            if ( bed == null ) return;
-
             if ( CompLoftBed.isLoftBed(bed) ){
+                // can also fine-tune pawn's head altitude here, but Patch_MoteMaker should also be changed then
                 if( LoftBedMod.Settings.altPerspectiveMode ){
                     __result.z += LoftBedMod.Settings.f2;
                 } else {

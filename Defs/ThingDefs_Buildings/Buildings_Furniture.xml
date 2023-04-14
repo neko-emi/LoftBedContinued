@@ -33,7 +33,9 @@
       <paintable>true</paintable>
       <isEdifice>false</isEdifice>
     </building>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <!-- altitude should not be lower than LayingPawn, or drawing of laying in non-loft bed pawns should also be patched -->
+    <!--altitudeLayer>Pawn</altitudeLayer-->
+    <altitudeLayer>PawnRope</altitudeLayer>
     <clearBuildingArea>false</clearBuildingArea>
     <blockLight>true</blockLight>
     <uiIconPath>Things/Furniture/LoftBed/LoftBed_MenuIcon</uiIconPath>

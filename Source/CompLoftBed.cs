@@ -9,6 +9,7 @@ namespace zed_0xff.LoftBed
     {
         public static HashSet<ThingWithComps> loftBeds = new HashSet<ThingWithComps>();
 
+        // null-safe
         public static bool isLoftBed(Thing t){
             return t is ThingWithComps twc && loftBeds.Contains(twc);
         }
