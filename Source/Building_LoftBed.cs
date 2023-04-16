@@ -1,11 +1,9 @@
-﻿using System.Reflection;
+﻿using System;
 using RimWorld;
-using UnityEngine;
-using Verse;
-using HarmonyLib;
 
 namespace zed_0xff.LoftBed
 {
+    [ObsoleteAttribute]
     public class Building_LoftBed : Building_Bed
     {
     }

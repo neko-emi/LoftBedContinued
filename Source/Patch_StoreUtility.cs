@@ -19,8 +19,8 @@ namespace zed_0xff.LoftBed {
         private static List<Thing> FilteredThingsListAt(ThingGrid grid, IntVec3 c){
             List<Thing> list = grid.ThingsListAt(c);
             for(int i=0; i<list.Count; i++){
-                if( CompLoftBed.isLoftBed(list[i]) ){
-                    return list.Where((Thing t) => !CompLoftBed.isLoftBed(t)).ToList();
+                if( BedCache.isLoftBed(list[i]) ){
+                    return list.Where((Thing t) => !BedCache.isLoftBed(t)).ToList();
                 }
             }
             return list;

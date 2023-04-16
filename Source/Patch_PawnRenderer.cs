@@ -19,7 +19,7 @@ namespace zed_0xff.LoftBed {
             if( pawn == null ) return;
 
             Building_Bed bed = pawn.CurrentBed();
-            if ( CompLoftBed.isLoftBed(bed) ){
+            if ( BedCache.isLoftBed(bed) ){
                 // can also fine-tune pawn's head altitude here, but Patch_MoteMaker should also be changed then
                 if( LoftBedMod.Settings.altPerspectiveMode ){
                     __result.z += LoftBedMod.Settings.f2;

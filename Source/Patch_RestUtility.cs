@@ -18,14 +18,9 @@ namespace zed_0xff.LoftBed {
 
             List<Thing> things = p.Position.GetThingList(p.Map);
             List<Building_Bed> beds = new List<Building_Bed>();
-            //List<Pawn> other_pawns = new List<Pawn>();
             for (int i = 0; i < things.Count; i++){
                 if( things[i] is Building_Bed bed ){
                     beds.Add(bed);
-//                } else if (things[i] is Pawn pawn && pawn.CurJob != null && pawn.GetPosture().InBed()) {
-//                    if( pawn != p ){
-//                        other_pawns.Add(pawn);
-//                    }
                 }
             }
 
