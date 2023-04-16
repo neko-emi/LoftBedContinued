@@ -2,13 +2,22 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using RimWorld.Planet;
 
 namespace zed_0xff.LoftBed
 {
-    class BedCache
+    class BedCache : WorldComponent
     {
         private static HashSet<ThingWithComps> loftBeds = new HashSet<ThingWithComps>();
         private static Dictionary<int, Dictionary<IntVec3, ThingWithComps>> mapPosLoftBeds = new Dictionary<int, Dictionary<IntVec3, ThingWithComps>>();
+
+        public BedCache(World w) : base(w)
+        {
+            // clear caches whenever a game is created or loaded.
+            if( Prefs.DevMode ) Log.Message("[d] LoftBed: clearing cache");
+            loftBeds.Clear();
+            mapPosLoftBeds.Clear();
+        }
 
         // null-safe
         public static bool isLoftBed(Thing t){
@@ -34,17 +43,24 @@ namespace zed_0xff.LoftBed
         }
 
         public static void Add(ThingWithComps t){
+            if( Prefs.DevMode ) Log.Message("[d] LoftBed: add " + t);
             loftBeds.Add(t);
             if( !mapPosLoftBeds.ContainsKey(t.Map.uniqueID) ){
                 mapPosLoftBeds.Add(t.Map.uniqueID, new Dictionary<IntVec3, ThingWithComps>());
             }
-            mapPosLoftBeds[t.Map.uniqueID].Add(t.Position, t);
+            mapPosLoftBeds[t.Map.uniqueID][t.Position] = t;
         }
 
         public static void Remove(ThingWithComps t, Map map){
+            if( Prefs.DevMode ) Log.Message("[d] LoftBed: removing " + t);
             loftBeds.Remove(t);
-            if( mapPosLoftBeds.ContainsKey(t.Map.uniqueID) ){
-                mapPosLoftBeds[map.uniqueID].Remove(t.Position);
+            if( mapPosLoftBeds.ContainsKey(map.uniqueID) ){
+                ThingWithComps t1 = null;
+                if (mapPosLoftBeds[map.uniqueID].TryGetValue(t.Position, out t1) && t1 == t){
+                    mapPosLoftBeds[map.uniqueID].Remove(t.Position);
+                } else {
+                    // bed is already replaced by hospitality
+                }
             }
         }
     }
