@@ -9,26 +9,37 @@ namespace zed_0xff.LoftBed
 		public override AcceptanceReport AllowsPlacing(BuildableDef def, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
 		{
             List<IntVec3> nearLocs = new List<IntVec3>();
-            if( rot == Rot4.South ){
+
+            if( def.Size.x == 1 ){
+                // single bed
+                if( rot == Rot4.South ){
                     nearLocs.Add(new IntVec3(loc.x, loc.y, loc.z+1));
                     nearLocs.Add(new IntVec3(loc.x, loc.y, loc.z-def.Size.z));
-            } else if( rot == Rot4.North ){
+                } else if( rot == Rot4.North ){
                     nearLocs.Add(new IntVec3(loc.x, loc.y, loc.z-1));
                     nearLocs.Add(new IntVec3(loc.x, loc.y, loc.z+def.Size.z));
-            } else if( rot == Rot4.East ){
+                } else if( rot == Rot4.East ){
                     nearLocs.Add(new IntVec3(loc.x-1, loc.y, loc.z));
                     nearLocs.Add(new IntVec3(loc.x+def.Size.z, loc.y, loc.z));
-            } else {
+                } else {
                     nearLocs.Add(new IntVec3(loc.x+1, loc.y, loc.z));
                     nearLocs.Add(new IntVec3(loc.x-def.Size.z, loc.y, loc.z));
+                }
+            } else if (def.Size.x == 2){
+                // double bed
+                CellRect newRect = GenAdj.OccupiedRect(loc, rot, def.Size);
+                nearLocs.Add(new IntVec3(newRect.minX-1, loc.y, newRect.minZ-1));
+                nearLocs.Add(new IntVec3(newRect.maxX+1, loc.y, newRect.maxZ+1));
+                nearLocs.Add(new IntVec3(newRect.minX-1, loc.y, newRect.maxZ+1));
+                nearLocs.Add(new IntVec3(newRect.maxX+1, loc.y, newRect.minZ-1));
             }
 
             List<Thing> nearThings = new List<Thing>();
-			foreach (IntVec3 nearLoc in nearLocs){
+            foreach (IntVec3 nearLoc in nearLocs){
                 foreach (Thing thingNear in map.thingGrid.ThingsListAtFast(nearLoc)){
-					if (!(thingNear is Building || thingNear is Blueprint))
+                    if (!(thingNear is Building || thingNear is Blueprint))
                         continue;
-					if (thingNear.def.Size.x == 1 || thingNear.def.Size.z == 1)
+                    if (thingNear.def.Size.x == 1 || thingNear.def.Size.z == 1)
                         continue;
                     nearThings.Add(thingNear);
                 }

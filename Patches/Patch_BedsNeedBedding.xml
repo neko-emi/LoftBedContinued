@@ -12,6 +12,9 @@
           <xpath>*/ThingDef[defName = "LoftBed"]/costStuffCount</xpath>
           <success>Normal</success>
         </li>
+
+        <!-- single bed -->
+
         <li Class="PatchOperationReplace">
           <xpath>*/ThingDef[defName = "LoftBed"]/costStuffCount</xpath>
           <value><costStuffCount>40</costStuffCount></value>
@@ -27,6 +30,30 @@
 
         <li Class="PatchOperationAdd">
           <xpath>*/ThingDef[defName = "LoftBed"]/comps</xpath>
+          <value>
+            <li>
+              <compClass>CompColorable</compClass>
+            </li>
+          </value>
+        </li>
+
+        <!-- double bed -->
+
+        <li Class="PatchOperationReplace">
+          <xpath>*/ThingDef[defName = "DoubleLoftBed"]/costStuffCount</xpath>
+          <value><costStuffCount>70</costStuffCount></value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>*/ThingDef[defName = "DoubleLoftBed"]/costStuffCount</xpath>
+          <value>
+            <costList>
+              <Bedding>2</Bedding>
+            </costList>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "DoubleLoftBed"]/comps</xpath>
           <value>
             <li>
               <compClass>CompColorable</compClass>
