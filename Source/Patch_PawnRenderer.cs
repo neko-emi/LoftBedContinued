@@ -18,7 +18,8 @@ namespace zed_0xff.LoftBed {
             Pawn pawn = _pawn(__instance);
             if( pawn == null ) return;
 
-            Building_Bed bed = pawn.CurrentBed();
+            int? sleepingSlot;
+            Building_Bed bed = pawn.CurrentBed(out sleepingSlot);
             if ( BedCache.isLoftBed(bed) ){
                 // can also fine-tune pawn's head altitude here, but Patch_MoteMaker should also be changed then
                 if( LoftBedMod.Settings.altPerspectiveMode ){
@@ -28,8 +29,12 @@ namespace zed_0xff.LoftBed {
                         __result.z = bed.Position.z + LoftBedMod.Settings.f2;
                     } else if( bed.Rotation == Rot4.North ){
                         __result.z = bed.Position.z + LoftBedMod.Settings.f2 + 1.0f;
+                    } else if( bed.Rotation == Rot4.East ){
+                        if( sleepingSlot == null ) sleepingSlot = 0;
+                        __result.z = bed.Position.z + LoftBedMod.Settings.f2 + 0.5f - (int)sleepingSlot;
                     } else {
-                        __result.z = bed.Position.z + LoftBedMod.Settings.f2 + 0.5f;
+                        if( sleepingSlot == null ) sleepingSlot = 0;
+                        __result.z = bed.Position.z + LoftBedMod.Settings.f2 + 0.5f + (int)sleepingSlot;
                     }
                 }
             }
