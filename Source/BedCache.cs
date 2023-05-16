@@ -48,18 +48,31 @@ namespace zed_0xff.LoftBed
             if( !mapPosLoftBeds.ContainsKey(t.Map.uniqueID) ){
                 mapPosLoftBeds.Add(t.Map.uniqueID, new Dictionary<IntVec3, ThingWithComps>());
             }
-            mapPosLoftBeds[t.Map.uniqueID][t.Position] = t;
+            if( t is Building_Bed bed ){
+                for( int i=0; i<bed.SleepingSlotsCount; i++ ){
+                    mapPosLoftBeds[t.Map.uniqueID][bed.GetSleepingSlotPos(i)] = t;
+                }
+            } else {
+                Log.ErrorOnce("[?] LeftBed: should not be here", 1431242932);
+            }
         }
 
         public static void Remove(ThingWithComps t, Map map){
             if( Prefs.DevMode ) Log.Message("[d] LoftBed: removing " + t);
             loftBeds.Remove(t);
             if( mapPosLoftBeds.ContainsKey(map.uniqueID) ){
-                ThingWithComps t1 = null;
-                if (mapPosLoftBeds[map.uniqueID].TryGetValue(t.Position, out t1) && t1 == t){
-                    mapPosLoftBeds[map.uniqueID].Remove(t.Position);
+                if( t is Building_Bed bed ){
+                    ThingWithComps t1 = null;
+                    for( int i=0; i<bed.SleepingSlotsCount; i++ ){
+                        var pos = bed.GetSleepingSlotPos(i);
+                        if (mapPosLoftBeds[map.uniqueID].TryGetValue(pos, out t1) && t1 == t){
+                            mapPosLoftBeds[map.uniqueID].Remove(pos);
+                        } else {
+                            // bed is already replaced by hospitality
+                        }
+                    }
                 } else {
-                    // bed is already replaced by hospitality
+                    Log.ErrorOnce("[?] LeftBed: should not be here 2", 1431242933);
                 }
             }
         }
