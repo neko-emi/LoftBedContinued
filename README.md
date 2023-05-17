@@ -22,7 +22,9 @@ By default you can't place loft beds over a structures with cover > 50%, but thi
 
 ## You may also like...
 
-[![](https://steamuserimages-a.akamaihd.net/ugc/2031728856451641972/9639B0184A2D4EAE2A71E83450AD375D4392EF6F/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2965143667) [![](https://steamuserimages-a.akamaihd.net/ugc/2031730758739600069/9E719DE99C619EA2C369BD9C8CCF76A0D159889B/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2957616010) [![](https://steamuserimages-a.akamaihd.net/ugc/2030601882545722547/5C4C6F193DA4429BD79D2FA2632AD7B3E188D79E/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2960434569)
+[![CPS: Compact Pawn Storage](https://steamuserimages-a.akamaihd.net/ugc/2031730758744755960/6EBD5542F16F51143F66B0123588C3CD002945A4/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2974541112)
+[![YADA](https://steamuserimages-a.akamaihd.net/ugc/2031730032116745972/3AFF012AAA9C0F768199C85E3BD48533D177D40E/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2971543841)
+[![Connected Bed](https://steamuserimages-a.akamaihd.net/ugc/2031728856453754835/D013215D765753603B6F287EABA65E4987943552/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2957904090)
 
 https://github.com/zed-0xff/RW-LoftBed
 
