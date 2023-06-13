@@ -7,28 +7,30 @@
   <supportedVersions>
     <li>1.4</li>
   </supportedVersions>
-  <description>A loft bed is a double level bed similar to a bunk bed, but it only has one mattress. The top bunk is usually for sleeping while the bottom bunk is used as a study area by way of a desk.
+  <description><![CDATA[<color=#1a8bff><b>Loft Bed</b></color>
 
+A loft bed is a double level bed similar to a bunk bed, but it only has one mattress. The top bunk is usually for sleeping while the bottom bunk is used as a study area by way of a desk.
 Stuffable as a regular bed.
 You can build bunk beds with this one just by placing it over an existing regular bed.
 By default you can't place loft beds over a structures with cover > 50%, but this can be changed in mod settings.
 
-[h2]Verified compatible mods[/h2]
-[list]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896]LWM's Deep Storage[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2404555784]Automatic Bed Reassignment[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2053931388]Set Owner for Prisoner Beds[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2920385763]Vanilla Nutrient Paste Expanded[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1424438685]Medical IVs[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2558522926]Beds Need Bedding[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2877292196]Yayo's Animation (Continued)[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=753498552]Hospitality[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2899647123]Majestic Foliage[/url]
-[/list]
+<color=#1a8bff><b>Verified compatible/supported mods</b></color>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1617282896">LWM's Deep Storage</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2404555784">Automatic Bed Reassignment</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2053931388">Set Owner for Prisoner Beds</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2920385763">Vanilla Nutrient Paste Expanded</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1424438685">Medical IVs</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836308268">Dubs Bad Hygiene</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2558522926">Beds Need Bedding</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2877292196">Yayo's Animation (Continued)</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=753498552">Hospitality</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2899647123">Majestic Foliage</a>
+  • <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=833899765">Dubs Skylights</a>
 
-[url=https://ko-fi.com/K3K81Z3W5][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
-</description>
+https://github.com/zed-0xff/RW-LoftBed
+
+<color=#1a8bff><b>Support me</b></color>
+https://ko-fi.com/K3K81Z3W5 or https://www.patreon.com/zed_0xff]]></description>
   <modDependencies>
       <li>
           <packageId>brrainz.harmony</packageId>

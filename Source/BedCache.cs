@@ -14,7 +14,6 @@ namespace zed_0xff.LoftBed
         public BedCache(World w) : base(w)
         {
             // clear caches whenever a game is created or loaded.
-            if( Prefs.DevMode ) Log.Message("[d] LoftBed: clearing cache");
             loftBeds.Clear();
             mapPosLoftBeds.Clear();
         }
@@ -43,7 +42,6 @@ namespace zed_0xff.LoftBed
         }
 
         public static void Add(ThingWithComps t){
-            if( Prefs.DevMode ) Log.Message("[d] LoftBed: add " + t);
             loftBeds.Add(t);
             if( !mapPosLoftBeds.ContainsKey(t.Map.uniqueID) ){
                 mapPosLoftBeds.Add(t.Map.uniqueID, new Dictionary<IntVec3, ThingWithComps>());
@@ -58,7 +56,6 @@ namespace zed_0xff.LoftBed
         }
 
         public static void Remove(ThingWithComps t, Map map){
-            if( Prefs.DevMode ) Log.Message("[d] LoftBed: removing " + t);
             loftBeds.Remove(t);
             if( mapPosLoftBeds.ContainsKey(map.uniqueID) ){
                 if( t is Building_Bed bed ){

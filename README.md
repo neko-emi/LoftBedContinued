@@ -19,11 +19,12 @@ By default you can't place loft beds over a structures with cover > 50%, but thi
 - [Yayo's Animation (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2877292196)
 - [Hospitality](https://steamcommunity.com/sharedfiles/filedetails/?id=753498552)
 - [Majestic Foliage](https://steamcommunity.com/sharedfiles/filedetails/?id=2899647123)
+- [Dubs Skylights](https://steamcommunity.com/sharedfiles/filedetails/?id=833899765)
 
 ## You may also like...
 
 [![CPS: Compact Pawn Storage](https://steamuserimages-a.akamaihd.net/ugc/2031730758744755960/6EBD5542F16F51143F66B0123588C3CD002945A4/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2974541112)
-[![Connected Bed](https://steamuserimages-a.akamaihd.net/ugc/2031731300513128421/33F0CC11BA63BE38DEB3FECEB9AB5B15114EE997/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2957904090)
+[![Connected Bed](https://steamuserimages-a.akamaihd.net/ugc/2021600103453281640/0C8EAD4C7310BE2C526EE86BBA7AA4E71B3527C2/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2957904090)
 [![YADA](https://steamuserimages-a.akamaihd.net/ugc/2031731300519719867/4E551B5E8A5F51182BD2D8830C7E9E180D0634BC/?imw=268&imh=151&ima=fit&impolicy=Letterbox)](https://steamcommunity.com/sharedfiles/filedetails/?id=2971543841)
 
 https://github.com/zed-0xff/RW-LoftBed

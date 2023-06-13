@@ -41,6 +41,10 @@ namespace zed_0xff.LoftBed
                         continue;
                     if (thingNear.def.Size.x == 1 || thingNear.def.Size.z == 1)
                         continue;
+                    if (thingNear.def.altitudeLayer > def.altitudeLayer || !thingNear.def.selectable){
+                        // Dubs Skylights
+                        continue;
+                    }
                     nearThings.Add(thingNear);
                 }
             }
