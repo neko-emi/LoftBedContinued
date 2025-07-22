@@ -19,8 +19,6 @@
 		Stuffable as a regular bed.
 		You can build bunk beds with this one just by placing it over an existing regular bed.
 		By default you can't place loft beds over a structures with cover > 50%, but this can be changed in mod settings.
-
-		https://github.com/zed-0xff/RW-LoftBed
 	</description>
 	<modDependencies>
 		<li>
