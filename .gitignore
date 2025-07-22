@@ -1,1 +1,5 @@
 *.dll
+/Source/obj
+/Assemblies
+/Source/.vs
+/.vs
