@@ -5,7 +5,7 @@ using System.Reflection;
 using UnityEngine;
 using Verse;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
     [HarmonyPatch(typeof(PawnUtility), "GainComfortFromCellIfPossible")]
     static class Patch_GainComfortFromCellIfPossible
     {
@@ -20,7 +20,7 @@ namespace zed_0xff.LoftBed {
             if( loft_bed == null )
                 return true;
 
-            PawnUtility.GainComfortFromThingIfPossible(p, loft_bed);
+            PawnUtility.GainComfortFromThingIfPossible(p, loft_bed, 1);
             return false;
         }
     }

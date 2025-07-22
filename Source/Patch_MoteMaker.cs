@@ -4,7 +4,7 @@ using RimWorld;
 using UnityEngine;
 using System.Reflection;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
     /*
      * does not work as expected :(
      *

@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using System.Collections.Generic;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
 
     // fix vanilla shelves stop accepting items when placed under a LoftBed
     [HarmonyPatch(typeof(StoreUtility), "NoStorageBlockersIn")]

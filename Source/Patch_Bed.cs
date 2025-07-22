@@ -5,7 +5,7 @@ using System.Reflection;
 using UnityEngine;
 using Verse;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
     [HarmonyPatch(typeof(Building_Bed), "GetCurOccupant")]
     static class Patch_GetCurOccupant
     {

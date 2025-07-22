@@ -4,7 +4,7 @@ using UnityEngine;
 using Verse;
 using RimWorld.Planet;
 
-namespace zed_0xff.LoftBed
+namespace Nekoemi.LoftBed
 {
     class BedCache : WorldComponent
     {

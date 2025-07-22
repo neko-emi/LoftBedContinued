@@ -2,7 +2,7 @@ using Verse;
 using System.Collections.Generic;
 using RimWorld;
 
-namespace zed_0xff.LoftBed
+namespace Nekoemi.LoftBed
 {
 	public class PlaceWorker_Loft : PlaceWorker
 	{

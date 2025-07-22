@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Verse;
 using UnityEngine;
 
-namespace zed_0xff.LoftBed
+namespace Nekoemi.LoftBed
 {
     public class LoftBedSettings : ModSettings
     {

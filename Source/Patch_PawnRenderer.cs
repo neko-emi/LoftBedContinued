@@ -5,7 +5,7 @@ using System.Reflection;
 using UnityEngine;
 using Verse;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
     [HarmonyPatch(typeof(PawnRenderer), "GetBodyPos")]
     [HarmonyPriority(Priority.Last)] // make it last to fix any offsets by other mods, fixes Yayo's animations
     static class Patch_GetBodyPos

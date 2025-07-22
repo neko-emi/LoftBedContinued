@@ -40,11 +40,11 @@
     <uiIconPath>Things/Furniture/LoftBed/LoftBed_MenuIcon</uiIconPath>
     <uiIconScale>1.25</uiIconScale>
     <placeWorkers>
-      <li>zed_0xff.LoftBed.PlaceWorker_Loft</li>
+      <li>Nekoemi.LoftBed.PlaceWorker_Loft</li>
     </placeWorkers>
     <fillPercent>0.20</fillPercent>
     <comps>
-      <li Class="zed_0xff.LoftBed.CompProperties_LoftBed">
+      <li Class="Nekoemi.LoftBed.CompProperties_LoftBed">
       </li>
     </comps>
   </ThingDef>
@@ -89,11 +89,11 @@
     <uiIconOffset>(0, 0)</uiIconOffset>
     <uiIconScale>1.1</uiIconScale>
     <placeWorkers>
-      <li>zed_0xff.LoftBed.PlaceWorker_Loft</li>
+      <li>Nekoemi.LoftBed.PlaceWorker_Loft</li>
     </placeWorkers>
     <fillPercent>0.20</fillPercent>
     <comps>
-      <li Class="zed_0xff.LoftBed.CompProperties_LoftBed">
+      <li Class="Nekoemi.LoftBed.CompProperties_LoftBed">
       </li>
     </comps>
   </ThingDef>

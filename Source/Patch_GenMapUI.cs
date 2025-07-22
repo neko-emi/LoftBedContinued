@@ -4,7 +4,7 @@ using RimWorld;
 using UnityEngine;
 using System.Reflection;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
     [HarmonyPatch(typeof(GenMapUI), nameof(GenMapUI.LabelDrawPosFor), new[] {typeof(Thing), typeof(float)})]
     static class Patch_LabelDrawPosFor
     {

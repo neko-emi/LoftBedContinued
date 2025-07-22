@@ -3,7 +3,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace zed_0xff.LoftBed
+namespace Nekoemi.LoftBed
 {
     public class CompLoftBed : ThingComp
     {
@@ -22,7 +22,7 @@ namespace zed_0xff.LoftBed
             }
         }
 
-        public override void PostDeSpawn(Map map)
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         {
             BedCache.Remove(parent, map);
             base.PostDeSpawn(map);

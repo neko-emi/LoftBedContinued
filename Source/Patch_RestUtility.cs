@@ -6,7 +6,7 @@ using System.Reflection;
 using UnityEngine;
 using Verse;
 
-namespace zed_0xff.LoftBed {
+namespace Nekoemi.LoftBed {
     [HarmonyPatch(typeof(RestUtility), "CurrentBed")]
 	[HarmonyPatch(new Type[] { typeof(Pawn), typeof(int?) }, new ArgumentType[] { ArgumentType.Normal, ArgumentType.Out })]
     static class Patch_CurrentBed

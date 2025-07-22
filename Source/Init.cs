@@ -2,14 +2,14 @@ using RimWorld;
 using Verse;
 using HarmonyLib;
 
-namespace zed_0xff.LoftBed
+namespace Nekoemi.LoftBed
 {
     [StaticConstructorOnStartup]
     public class Init
     {
         static Init()
         {
-            Harmony harmony = new Harmony("zed_0xff.LoftBed");
+            Harmony harmony = new Harmony("Nekoemi.LoftBed");
             harmony.PatchAll();
         }
     }

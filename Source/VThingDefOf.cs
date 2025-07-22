@@ -1,7 +1,7 @@
 using RimWorld;
 using Verse;
 
-namespace zed_0xff.LoftBed
+namespace Nekoemi.LoftBed
 {
     [DefOf]
     public static class VThingDefOf
