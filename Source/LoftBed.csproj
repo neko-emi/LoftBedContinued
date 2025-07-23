@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
@@ -22,6 +22,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <WarningLevel>0</WarningLevel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Buildings_Furniture.xml" />
+    <None Remove="Buildings_VFE.xml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.2.2" ExcludeAssets="runtime" />

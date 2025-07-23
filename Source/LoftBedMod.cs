@@ -53,7 +53,7 @@ namespace Nekoemi.LoftBed
 
         public override string SettingsCategory()
         {
-            return "LoftBed".Translate();
+          return "Loft Bed (Continued)";
         }
     }
 }

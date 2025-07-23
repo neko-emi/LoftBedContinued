@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+  
   <ThingDef ParentName="BasicBedBase" Name="LoftBed">
     <defName>LoftBed</defName>
     <label>loft bed</label>
@@ -15,7 +15,7 @@
       </damageData>
     </graphicData>
     <statBases>
-      <MaxHitPoints>110</MaxHitPoints>
+      <MaxHitPoints>145</MaxHitPoints>
       <Beauty>-1</Beauty>
       <WorkToBuild>1200</WorkToBuild>
       <Mass>40</Mass>
@@ -31,14 +31,20 @@
     <building>
       <paintable>true</paintable>
       <isEdifice>false</isEdifice>
+			<buildingTags>
+				<li>LoftBed</li>
+			</buildingTags>
     </building>
+		<replaceTags Inherit="False">
+			<li>LoftBed</li>
+		</replaceTags>
     <!-- altitude should not be lower than LayingPawn, or drawing of laying in non-loft bed pawns should also be patched -->
     <!--altitudeLayer>Pawn</altitudeLayer-->
     <altitudeLayer>PawnRope</altitudeLayer>
     <clearBuildingArea>false</clearBuildingArea>
     <blockLight>true</blockLight>
-    <uiIconPath>Things/Furniture/LoftBed/LoftBed_MenuIcon</uiIconPath>
-    <uiIconScale>1.25</uiIconScale>
+    <!--<uiIconPath>Things/Furniture/LoftBed/LoftBed_MenuIcon</uiIconPath>-->
+    <uiIconScale>0.75</uiIconScale>
     <placeWorkers>
       <li>Nekoemi.LoftBed.PlaceWorker_Loft</li>
     </placeWorkers>
@@ -63,7 +69,7 @@
       </damageData>
     </graphicData>
     <statBases>
-      <MaxHitPoints>170</MaxHitPoints>
+      <MaxHitPoints>210</MaxHitPoints>
       <Beauty>0</Beauty>
       <WorkToBuild>2000</WorkToBuild>
       <Mass>60</Mass>
@@ -75,19 +81,23 @@
     <size>(2,2)</size> <!-- width here is also a number of sleeping slots -->
     <costStuffCount>90</costStuffCount>
     <!--designationHotKey>Misc3</designationHotKey-->
-    <uiOrder>2010</uiOrder>
+    <!--uiOrder>2010</uiOrder>-->
     <building>
       <paintable>true</paintable>
       <isEdifice>false</isEdifice>
+			<buildingTags>
+				<li>LoftBed</li>
+			</buildingTags>
     </building>
+		<replaceTags Inherit="False">
+			<li>LoftBed</li>
+		</replaceTags>
     <!-- altitude should not be lower than LayingPawn, or drawing of laying in non-loft bed pawns should also be patched -->
     <!--altitudeLayer>Pawn</altitudeLayer-->
     <altitudeLayer>PawnRope</altitudeLayer>
     <clearBuildingArea>false</clearBuildingArea>
     <blockLight>true</blockLight>
-    <uiIconPath>Things/Furniture/LoftBed/DoubleLoftBed_east</uiIconPath>
-    <uiIconOffset>(0, 0)</uiIconOffset>
-    <uiIconScale>1.1</uiIconScale>
+    <uiIconScale>0.75</uiIconScale>
     <placeWorkers>
       <li>Nekoemi.LoftBed.PlaceWorker_Loft</li>
     </placeWorkers>
@@ -97,5 +107,5 @@
       </li>
     </comps>
   </ThingDef>
-
+	
 </Defs>

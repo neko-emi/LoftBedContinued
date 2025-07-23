@@ -10,9 +10,9 @@ namespace Nekoemi.LoftBed {
     static class Patch_GainComfortFromCellIfPossible
     {
         // vanilla GainComfortFromCellIfPossible() might skip LoftBed if there's another building under it
-        static bool Prefix(ref Pawn p, bool chairsOnly)
+        static bool Prefix(ref Pawn p, int delta, bool chairsOnly)
         {
-            if (!p.Spawned || Find.TickManager.TicksGame % 10 != 0 || chairsOnly)
+            if (!p.Spawned || !p.IsHashIntervalTick(15, delta) || chairsOnly)
                 return true;
 
             // returns only Loft beds!
@@ -20,7 +20,7 @@ namespace Nekoemi.LoftBed {
             if( loft_bed == null )
                 return true;
 
-            PawnUtility.GainComfortFromThingIfPossible(p, loft_bed, 1);
+			      PawnUtility.GainComfortFromThingIfPossible(p, loft_bed, delta);
             return false;
         }
     }
