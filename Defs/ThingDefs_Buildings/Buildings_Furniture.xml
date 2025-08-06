@@ -42,7 +42,7 @@
     <!--altitudeLayer>Pawn</altitudeLayer-->
     <altitudeLayer>PawnRope</altitudeLayer>
     <clearBuildingArea>false</clearBuildingArea>
-    <blockLight>true</blockLight>
+    <blockLight>false</blockLight>
     <!--<uiIconPath>Things/Furniture/LoftBed/LoftBed_MenuIcon</uiIconPath>-->
     <uiIconScale>0.75</uiIconScale>
     <placeWorkers>
@@ -85,18 +85,18 @@
     <building>
       <paintable>true</paintable>
       <isEdifice>false</isEdifice>
-			<buildingTags>
-				<li>LoftBed</li>
-			</buildingTags>
-    </building>
-		<replaceTags Inherit="False">
+		<buildingTags>
 			<li>LoftBed</li>
-		</replaceTags>
+		</buildingTags>
+    </building>
+	<replaceTags Inherit="False">
+		<li>LoftBed</li>
+	</replaceTags>
     <!-- altitude should not be lower than LayingPawn, or drawing of laying in non-loft bed pawns should also be patched -->
     <!--altitudeLayer>Pawn</altitudeLayer-->
     <altitudeLayer>PawnRope</altitudeLayer>
     <clearBuildingArea>false</clearBuildingArea>
-    <blockLight>true</blockLight>
+    <blockLight>false</blockLight>
     <uiIconScale>0.75</uiIconScale>
     <placeWorkers>
       <li>Nekoemi.LoftBed.PlaceWorker_Loft</li>

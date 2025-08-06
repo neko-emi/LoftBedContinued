@@ -16,7 +16,7 @@ namespace Nekoemi.LoftBed {
                 if ( bed != null && bed.def == VThingDefOf.LoftBed ) {
                     __result.y += LoftBedMod.Settings.f1;
                 }
-            } else if ( BedCache.isLoftBed(thing) ){
+            } else if ( LoftBedUtility.isLoftBed(thing) ){
                 __result.y += LoftBedMod.Settings.f1;
             }
         }

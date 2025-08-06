@@ -20,7 +20,7 @@ namespace Nekoemi.LoftBed {
 
             int? sleepingSlot;
             Building_Bed bed = pawn.CurrentBed(out sleepingSlot);
-            if ( BedCache.isLoftBed(bed) ){
+            if ( LoftBedUtility.isLoftBed(bed) ){
                 // can also fine-tune pawn's head altitude here, but Patch_MoteMaker should also be changed then
                 if( LoftBedMod.Settings.altPerspectiveMode ){
                     __result.z += LoftBedMod.Settings.f2;

@@ -19,8 +19,8 @@ namespace Nekoemi.LoftBed {
         private static List<Thing> FilteredThingsListAt(ThingGrid grid, IntVec3 c){
             List<Thing> list = grid.ThingsListAt(c);
             for(int i=0; i<list.Count; i++){
-                if( BedCache.isLoftBed(list[i]) ){
-                    return list.Where((Thing t) => !BedCache.isLoftBed(t)).ToList();
+                if( LoftBedUtility.isLoftBed(list[i]) ){
+                    return list.Where((Thing t) => !LoftBedUtility.isLoftBed(t)).ToList();
                 }
             }
             return list;

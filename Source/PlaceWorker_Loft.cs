@@ -56,7 +56,7 @@ namespace Nekoemi.LoftBed
                     if (thingHere == thingToIgnore )
                         continue;
 
-					if (thingHere is Building building && ((isForbidden(building.def)) || BedCache.isLoftBed(building)))
+					if (thingHere is Building building && ((isForbidden(building.def)) || LoftBedUtility.isLoftBed(building)))
                         return new AcceptanceReport("WorkPlacer_CannotPlaceHere".Translate());
 
 					if (thingHere is Blueprint blueprint && isForbidden(blueprint.def.entityDefToBuild as ThingDef))
