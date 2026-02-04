@@ -9,7 +9,7 @@ namespace Nekoemi.LoftBed
 	{
 		static Init()
 		{
-			//Harmony.DEBUG = true;
+			Harmony.DEBUG = true;
 			Harmony harmony = new Harmony("Nekoemi.LoftBed");
 			harmony.PatchAll();
 		}

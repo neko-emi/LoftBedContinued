@@ -3,7 +3,7 @@
 
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Beds Need Bedding</li>
+      <li>[Dizzy] Beds Need Bedding</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
